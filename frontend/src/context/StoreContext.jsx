@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
-export const StoreContext = createContext();
 import axios from 'axios'
+export const StoreContext = createContext();
 
 const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
