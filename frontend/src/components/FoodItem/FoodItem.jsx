@@ -6,14 +6,14 @@ const FoodItem = ({id,name,price,description,image}) => {
   
 
   //Cart Functionality imported from StoreContext used context api
-  const {cartItems,addToCart,removeFromCart}=useContext(StoreContext);
+  const {cartItems,addToCart,removeFromCart,url}=useContext(StoreContext);
 
 
 
   return (
     <div className='food-item'>
       <div className='food-item-img-container'>
-        <img src={image} alt="" className="food-item-image" />
+        <img src={url+"/images/"+image} alt="" className="food-item-image" />
         {
           !cartItems[id] ?
           <img className='add' onClick={()=>addToCart(id)} src={assets.add_icon_white} alt="" />:
