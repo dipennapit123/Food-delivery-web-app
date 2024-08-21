@@ -1,5 +1,5 @@
 
-import './Navbar.css'
+import "./Navbar.css"
 import {assets} from '../../assets/assets'
 
 const Navbar = () => {
